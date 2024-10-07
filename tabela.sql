@@ -1,11 +1,11 @@
-drop schema if exists prova;
-drop user if exists 'user'@'localhost';
+-- drop schema if exists prova;
+-- drop user if exists 'user'@'localhost';
 
-create schema prova;
-create user 'user'@'localhost' identified by 'pass123';
-grant select, insert, delete, update on spring.* to user@'localhost';
+-- create schema prova;
+-- create user 'user'@'localhost' identified by 'pass123';
+-- grant select, insert, delete, update on spring.* to user@'localhost';
 
-use prova;
+use spring;
 
 create table tra_trabalho (
  tra_id bigint primary key auto_increment,
